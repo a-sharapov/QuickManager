@@ -162,22 +162,36 @@
 
 #qmEditor, #qmEditorClosed
 {
-	font-family: Arial, Helvetica, sans-serif !important;
-   /* */
-    padding: 3px;
     position: fixed;
-    line-height:1;
+	font-family: Arial, Helvetica, sans-serif !important;
+    line-height: 1;
     z-index: 2147483647;
-	background: #657587 url(images/tinylogo.png) no-repeat -2px 3px;
+    height: 40px;
+    box-sizing: border-box;
+    padding: 5px 0;
+    color: #fff;
+	background: none;
+	background-color: #39515D !important;
+	background-image: -webkit-linear-gradient(left, #3f4850 0%, #365462 46%, #3e5554 60%, #42554d 68%, #573d4e 100%) !important;
+	background-image: -o-linear-gradient(left, #3f4850 0%, #365462 46%, #3e5554 60%, #42554d 68%, #573d4e 100%) !important;
+	background-image: linear-gradient(to right, #3f4850 0%, #365462 46%, #3e5554 60%, #42554d 68%, #573d4e 100%) !important;
 	text-align: left;
-	opacity:0.5; 
-    ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=50)"; 
-	filter: alpha(opacity=50);
+	opacity:0.7; 
+    ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=70)"; 
+	filter: alpha(opacity=70);
 	-webkit-transition-duration: 0.7s;
 	-moz-transition-duration: 0.7s;
 	transition-duration: 0.7s;
+    text-shadow: none;
 }
- 
+
+
+#qmEditor > li 
+{
+    line-height: 30px;
+}
+
+
 #qmEditor *:focus, #qmEditor *:active 
 {
     outline: none !important;
@@ -197,12 +211,14 @@
 	padding: 0;
 	line-height: normal;
 	border: 0;
+    text-decoration: none;
 }
 
 #qmEditor .qmId {
-	font-size: 20px;
-	line-height: 25px;
-	color: black;
+	font-size: 18px;
+	line-height: 30px;
+	color: #fff;
+    font-weight: normal;
 }
 #qmEditor .qmButton span
 {
@@ -224,16 +240,17 @@
     margin-right: -2px !important;
 }
 
-#qmLogoClose
+a#qmLogoClose
 {
     display: block;
     float: left;
-    height: 26px !important;
-    width: 40px !important;
-    margin: 0;
+    height: 30px !important;
+    width: 30px !important;
+    margin: 0 0 0 10px;
     text-decoration: none !important;
     border: 0 !important;
-    background: transparent url(images/transparent.gif) repeat;
+    background: transparent url(images/modx-logo.svg) no-repeat center center;
+    background-size: cover;
 }
     
 #qmEditor:hover, #qmEditorClosed:hover 
